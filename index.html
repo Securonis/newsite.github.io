@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securonis Linux</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Securonis Linux Logo">
+                    <span>Securonis</span>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#tools" class="nav-link">Tools</a></li>
+                    <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+                    <li><a href="release-notes.html" class="nav-link">Release Notes</a></li>
+                    <li><a href="#download" class="nav-link">Download</a></li>
+                    <li><a href="https://sourceforge.net/p/securonis/wiki/Home/" target="_blank" class="nav-link">Wiki</a></li>
+                    <li><a href="https://github.com/Securonis" target="_blank" class="nav-link">Github</a></li>
+                    <li><a href="#donate" class="nav-link">Donate</a></li>
+                    <li><a href="#developer" class="nav-link">Developer</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Securonis Linux</h1>
+                    <p>Securonis Linux is a privacy and security-focused distribution based on Debian's Testing branch. It features a preconfigured tool that routes all traffic through the Tor network, and includes various privacy tools and custom-built utilities.</p>
+                    <p>Using the lightweight MATE desktop, Securonis can run in live mode or be installed permanently via the Calamares installer. Its goal is to offer a secure and privacy-respecting system that's suitable for everyday use.</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">Download Now</a>
+                        <a href="#gallery" class="btn btn-secondary">View Screenshots</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/SecuronisLinux.jpg" alt="Securonis Linux Screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Securonis</h2>
+            <div class="about-wrapper">
+                <div class="about-col">
+                    <div class="about-card">
+                        <h3>Privacy-Focused Distro</h3>
+                        <p>Securonis GNU/Linux is a lightweight and high-performance operating system based on Debian Trixie, prioritizing privacy and security.</p>
+                        
+                        <p>At its core lies a custom tool named <strong>Seconionis</strong>, which forces all incoming and outgoing traffic through the Tor network. This tool also modifies kernel and network configurations to minimize the risk of data leakage.</p>
+                        
+                        <p>The system includes a wide range of encryption, security, and data wiping tools. DNS queries are encrypted via <strong>DNSCrypt-Proxy</strong>, ensuring secure DNS resolution.</p>
+                    </div>
+                </div>
+                
+                <div class="about-col">
+                    <div class="about-card">
+                        <h3>System-Wide Anonymity</h3>
+                        <p>Securonis comes pre-installed with the <strong>I2P Router</strong>, a graphical user interface, and a preconfigured browser—making access to the I2P network seamless.</p>
+                        
+                        <p>With the <strong>System Hardening Script</strong>, kernel and network settings are fortified to protect against unauthorized access.</p>
+                        
+                        <p>It also comes with a custom tool called <strong>System Knight</strong>, designed to scan the system for malware and rootkits.</p>    
+
+                        <p>Securonis Linux comes with dozens of custom-built applications, tools, scripts, and automations—all developed exclusively for the system. These tools are fully integrated and embedded into the OS.</p>
+
+                    </div>
+                </div>
+                
+                <div class="about-col">
+                    <div class="about-card">
+                        <h3>Why Securonis?</h3>
+                        <p>Securonis offers a safe and secure computing environment for everyday use without sacrificing usability or performance.</p>
+                        
+                        <p>No more relying on virtual machines or flash drives. No more complex Tor routing setups — everything is handled for you.</p>
+                        
+                        <p>You can run it in Live Mode without installation, or install it permanently using the Calamares installer.</p>
+                        
+                        <p>My mission is to deliver a secure, minimalistic, and privacy-respecting computing experience for everyday use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Privacy</h3>
+                    <p>System-wide privacy with Tor transparent proxy and various privacy tools</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Enhanced system security with custom hardening scripts and security tools</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Cryptography</h3>
+                    <p>Custom encryption tools designed specifically for Securonis</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>I2P Router</h3>
+                    <p>Pre-installed and configured I2P network access</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>MATE Desktop</h3>
+                    <p>Lightweight and clean interface for optimal performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Easy Install</h3>
+                    <p>Simple installation with Calamares installer</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized for speed even on older hardware</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather"></i>
+                    </div>
+                    <h3>Minimal</h3>
+                    <p>Clean system without unnecessary bloat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2>Securonis Tools</h2>
+            <p class="section-subtitle">Securonis tools are custom-built utilities designed to enhance privacy and security.</p>
+            
+            <div class="tools-grid">
+                <!-- Tool 1 -->
+                <div class="tool-card">
+                    <h3>Seconionis</h3>
+                    <p>Tor Traffic Router (Transparent Proxy)</p>
+                </div>
+                
+                <!-- Tool 2 -->
+                <div class="tool-card">
+                    <h3>I2P Router Menu</h3>
+                    <p>A GUI menu for I2P Router management</p>
+                </div>
+                
+                <!-- Tool 3 -->
+                <div class="tool-card">
+                    <h3>PxrtalCrypt</h3>
+                    <p>Advanced file encryption application</p>
+                </div>
+                
+                <!-- Tool 4 -->
+                <div class="tool-card">
+                    <h3>Securonis Notes</h3>
+                    <p>Encrypted note-taking application</p>
+                </div>
+                
+                <!-- Tool 5 -->
+                <div class="tool-card">
+                    <h3>Password Manager</h3>
+                    <p>Secure password storage solution</p>
+                </div>
+                
+                <!-- Tool 6 -->
+                <div class="tool-card">
+                    <h3>Quick-USBKit</h3>
+                    <p>USB configuration and health check toolkit</p>
+                </div>
+                
+                <!-- Tool 7 -->
+                <div class="tool-card">
+                    <h3>Open Mammoth</h3>
+                    <p>Network defense toolkit</p>
+                </div>
+                
+                <!-- Tool 8 -->
+                <div class="tool-card">
+                    <h3>Wizard</h3>
+                    <p>Trace cleaning tool</p>
+                </div>
+                
+                <!-- Tool 9 -->
+                <div class="tool-card">
+                    <h3>VesperaCrypt</h3>
+                    <p>Simple and user-friendly file encryption tool</p>
+                </div>
+                
+                <!-- Tool 10 -->
+                <div class="tool-card">
+                    <h3>System Knight</h3>
+                    <p>Malware and rootkit scanner</p>
+                </div>
+                
+                <!-- Tool 11 -->
+                <div class="tool-card">
+                    <h3>System Manager</h3>
+                    <p>Provides various features for system management</p>
+                </div>
+                
+                <!-- Tool 12 -->
+                <div class="tool-card">
+                    <h3>FireScorpion Browser</h3>
+                    <p>Hardened Firefox browser with no ads and no tracking</p>
+                </div>
+                
+                <!-- Tool 13 -->
+                <div class="tool-card">
+                    <h3>Nevermore</h3>
+                    <p>Secure disk wiper</p>
+                </div>
+                
+                <!-- Tool 14 -->
+                <div class="tool-card">
+                    <h3>Metadata Cleaner</h3>
+                    <p>Removes metadata from files</p>
+                </div>
+                
+                <!-- Tool 15 -->
+                <div class="tool-card">
+                    <h3>ColdBootDef</h3>
+                    <p>Network traffic monitoring and packet analysis tool</p>
+                </div>
+                
+                <!-- Tool 16 -->
+                <div class="tool-card">
+                    <h3>SecDNSChanger</h3>
+                    <p>Simple and easy DNS address changer</p>
+                </div>
+                
+                <!-- Tool 17 -->
+                <div class="tool-card">
+                    <h3>Securonis DNSCrypt</h3>
+                    <p>A script that simplifies the use of DNSCrypt-Proxy</p>
+                </div>
+
+                 <!-- Tool 18 -->
+                 <div class="tool-card">
+                    <h3>Paranoia</h3>
+                    <p> Blocks all network connections and applies strict kernel-level security for full system isolation</p>
+                </div>
+                
+                <!-- Tool 19 -->
+                <div class="tool-card">
+                    <h3>PhysicalSec</h3>
+                    <p>Protects the system against physical access and hardware-based attacks</p>
+                </div>
+                
+                <!-- Tool 20 -->
+                <div class="tool-card">
+                    <h3>Nuke2System</h3>
+                    <p>An emergency wipe tool that overwrites the disk with random data and irreversibly destroys all contents</p>
+                </div>
+
+                <!-- Tool 21 -->
+                <div class="tool-card">
+                    <h3>Securonis Data Destroyer</h3>
+                    <p>A tool that securely deletes files</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/ss0.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ss1.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ss2.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ss3.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ss4.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ss5.jpg" alt="Securonis Linux Screenshot">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-content">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption"></div>
+            <a class="lightbox-prev">&#10094;</a>
+            <a class="lightbox-next">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="download" class="section download">
+        <div class="container">
+            <h2>Download Securonis Linux</h2>
+            
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Latest Release: <span class="version-tag">3.0 Darkcloux</span></h3>
+                    <div class="release-date"><i class="fas fa-calendar-alt"></i> Released: June 2025</div>
+                    <div class="release-badge new">NEW</div>
+                    
+                    <p>Latest stable release with major improvements to security, performance, and usability. Based on Debian Trixie, featuring completely redesigned security infrastructure and enhanced privacy tools.</p>
+                    
+                    <div class="system-requirements">
+                        <h4><i class="fas fa-microchip"></i> System Requirements</h4>
+                        <div class="requirements-grid">
+                            <div class="requirement-item">
+                                <div class="req-icon"><i class="fas fa-server"></i></div>
+                                <div class="req-details">
+                                    <h5>CPU</h5>
+                                    <p>64-bit dual core processor</p>
+                                </div>
+                            </div>
+                            <div class="requirement-item">
+                                <div class="req-icon"><i class="fas fa-memory"></i></div>
+                                <div class="req-details">
+                                    <h5>RAM</h5>
+                                    <p>4GB minimum (8GB recommended)</p>
+                                </div>
+                            </div>
+                            <div class="requirement-item">
+                                <div class="req-icon"><i class="fas fa-hdd"></i></div>
+                                <div class="req-details">
+                                    <h5>Storage</h5>
+                                    <p>25GB minimum free space</p>
+                                </div>
+                            </div>
+                            <div class="requirement-item">
+                                <div class="req-icon"><i class="fas fa-network-wired"></i></div>
+                                <div class="req-details">
+                                    <h5>Internet</h5>
+                                    <p>Required for updates & Tor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-button-container">
+                    <div class="download-preview">
+                        <img src="assets/SecuronisLinux.jpg" alt="Securonis 3.0 Screenshot" class="download-image">
+                    </div>
+                    <a href="https://sourceforge.net/projects/securonis/files/latest/download" target="_blank" style="display: block; background-color: #9147ff; color: #fff; font-weight: 600; text-decoration: none; padding: 1rem 2rem; border-radius: 50px; width: 80%; font-size: 1.1rem; text-align: center; box-shadow: 0 4px 15px rgba(106, 90, 205, 0.3); margin: 0 auto;"><i class="fas fa-download"></i> Download Securonis 3.0</a>
+                    <div class="download-meta">
+                        <span><i class="fas fa-file-archive"></i> 2.5 GB</span>
+                        <span><i class="fas fa-compact-disc"></i> ISO Format</span>
+                        <span><i class="fas fa-shield-alt"></i> Verified</span>
+                    </div>
+                    <div class="download-options">
+                        <a href="https://sourceforge.net/projects/securonis/files/release/" id="sha1-button" target="_blank" class="download-option"><i class="fas fa-fingerprint"></i> SHA1 Checksum</a>
+                    </div>
+                    <div id="sha1-container" class="sha1-container">
+                        <div class="sha1-box">
+                            <span class="sha1-title">SHA1 Checksum:</span>
+                            <button class="copy-sha1-btn" data-clipboard-text="">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <span class="close-sha1-btn">&times;</span>
+                        </div>
+                    </div>
+                    <div class="installation-help">
+                        <a href="#" class="help-link"><i class="fas fa-book"></i> Installation Guide</a>
+                        <a href="release-notes.html" class="help-link"><i class="fas fa-question-circle"></i> Release Notes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="donate">
+        <div class="container">
+            <h2>Donate</h2>
+            <p class="donate-subtitle">Make a donation to contribute to the development of Securonis Linux.</p>
+            
+            <div class="crypto-grid">
+                <div class="crypto-card">
+                    <div class="crypto-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h4>Bitcoin</h4>
+                    <p>BTC Address:</p>
+                    <div class="crypto-address">
+                        <input type="text" class="address-input" value="bc1qrqcrrmt0lw6fxxzj2lppr5d60teqcm7fszuh0q" readonly>
+                        <button class="copy-btn" data-clipboard-text="bc1qrqcrrmt0lw6fxxzj2lppr5d60teqcm7fszuh0q" aria-label="Copy Bitcoin address">
+                            <i class="fas fa-copy"></i>
+                        </button>
+
+                    </div>
+                </div>
+                
+                <div class="crypto-card">
+                    <div class="crypto-icon">
+                        <i class="fab fa-ethereum"></i>
+                    </div>
+                    <h4>Ethereum</h4>
+                    <p>ETH Address:</p>
+                    <div class="crypto-address">
+                        <input type="text" class="address-input" value="0x34a909CD2691681dfe3F71D2956322A2B4D7f290" readonly>
+                        <button class="copy-btn" data-clipboard-text="0x34a909CD2691681dfe3F71D2956322A2B4D7f290" aria-label="Copy Ethereum address">
+                            <i class="fas fa-copy"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="developer" class="developer">
+        <div class="container">
+            <h2>Developer</h2>
+            <div class="developer-wrapper">
+                <div class="developer-image">
+                    <img src="assets/developer.png" alt="root0emir">
+                </div>
+                <div class="developer-content">
+                    <h3>root0emir</h3>
+                    <p>
+                        Founder and developer of the Securonis Linux project. A system and network administrator, as well 
+                        as a blue team cybersecurity specialist. Someone who improves himself every day. With curiosity and dedication, he is turning his dream of 
+                        creating his own Linux distribution into reality, step by step. Securonis Linux is the result of this 
+                        growth and determination.
+                    </p>
+                    <div class="developer-social">
+                        <a href="mailto:root0emir@protonmail.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/root0emir" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/emirkrc/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/" class="social-icon" target="_blank"><i class="fab fa-medium"></i></a>
+                        <a href="https://x.com/" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Securonis Linux Logo">
+                        <h3>Securonis Linux</h3>
+                    </div>
+                    <div class="footer-tagline">
+                        <p class="footer-motto">//Simple, Fast, Minimal, Secure.</p>
+                        <p class="footer-quote">~The brightest ideas come from minds in the shadows.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links-container">
+                    <div class="footer-links-column">
+                        <h4>Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#tools">Tools</a></li>
+                            <li><a href="#gallery">Screenshots</a></li>
+                            <li><a href="release-notes.html">Release Notes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="https://sourceforge.net/p/securonis/wiki/Home/" target="_blank">Wiki</a></li>
+                            <li><a href="#">Installation Guide</a></li>
+                            <li><a href="#">System Requirements</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Community</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/Securonis" target="_blank">GitHub</a></li>
+                            <li><a href="https://discord.gg/GtJ7EgKNEb" target="_blank">Discord</a></li>
+                            <li><a href="https://discord.gg/GtJ7EgKNEb" target="_blank">Forum</a></li>
+                            <li><a href="https://github.com/Securonis/issues" target="_blank">Bug Reports</a></li>
+                            <li><a href="https://github.com/Securonis/issues" target="_blank">Feature Requests</a></li>
+                            <li><a href="#donate">Support Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-middle">
+                <div class="footer-social">
+                    <h4>Securonis Socials</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Securonis" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/company/securonis-linux" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-icon" aria-label="Twitter(Soon)"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@securonis" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" class="social-icon" aria-label="Medium(Soon)"><i class="fab fa-medium"></i></a>
+                        <a href="https://discord.gg/GtJ7EgKNEb" target="_blank" class="social-icon" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" target="_blank" class="social-icon" aria-label="Reddit(Soon)"><i class="fab fa-reddit"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Securonis Linux. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <p>All Securonis components are fully open-source</p>
+                </div>
+                <div class="footer-credit">
+                    <img src="assets/sign.png" alt="root0emir Sign" class="footer-sign">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            menuToggle.classList.remove('active');
+                        }
+                    }
+                });
+            });
+            
+            // Gallery Lightbox
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+            const lightboxCaption = document.querySelector('.lightbox-caption');
+            
+            let currentIndex = 0;
+            const images = [];
+            
+            galleryItems.forEach((item, index) => {
+                images.push({
+                    src: item.src,
+                    alt: item.alt
+                });
+                
+                item.parentElement.addEventListener('click', () => {
+                    currentIndex = index;
+                    showLightbox();
+                });
+            });
+            
+            function showLightbox() {
+                lightboxImg.src = images[currentIndex].src;
+                lightboxCaption.textContent = images[currentIndex].alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function hideLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            if (lightboxClose) {
+                lightboxClose.addEventListener('click', hideLightbox);
+            }
+            
+            if (lightboxPrev) {
+                lightboxPrev.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showLightbox();
+                });
+            }
+            
+            if (lightboxNext) {
+                lightboxNext.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showLightbox();
+                });
+            }
+            
+            // Close lightbox when clicking outside the image
+            if (lightbox) {
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) {
+                        hideLightbox();
+                    }
+                });
+            }
+            
+            // Copy to clipboard functionality
+            const copyButtons = document.querySelectorAll('.copy-btn');
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const textToCopy = this.getAttribute('data-clipboard-text');
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        this.innerHTML = '<i class="fas fa-check"></i>';
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-copy"></i>';
+                        }, 2000);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
