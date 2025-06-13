@@ -288,7 +288,7 @@ section h2:after {
     padding: 30px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .crypto-card:hover {
@@ -1554,6 +1554,8 @@ section h2:after {
     margin: 1rem 0;
     color: var(--text-color-muted);
     font-size: 0.9rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .download-meta span {
@@ -1594,6 +1596,8 @@ section h2:after {
     display: flex;
     gap: 1rem;
     width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .help-link {
@@ -1843,11 +1847,6 @@ section h2:after {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-}
-
-.goal-header h4 {
-    margin: 0;
-    color: var(--text-color);
 }
 
 .goal-progress {
@@ -2360,9 +2359,10 @@ section h2:after {
 }
 
 .footer-links-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links-column h4 {
@@ -3331,6 +3331,49 @@ section h2:after {
         padding: 10px 20px;
     }
     
+    /* Improved download section for mobile */
+    .download-content {
+        flex-direction: column;
+    }
+    
+    .download-button-container {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    .download-meta {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .download-meta span {
+        margin: 5px 10px;
+    }
+    
+    .download-options {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    .download-option {
+        margin: 5px 0;
+        width: 100%;
+    }
+    
+    .installation-help {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .installation-help a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Improved footer for mobile */
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -3343,6 +3386,38 @@ section h2:after {
     
     .footer-social {
         justify-content: center;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+    }
+    
+    .footer-brand {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer-links-container {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    /* Fix for SHA1 checksum container */
+    #sha1-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    
+    .footer-links-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-middle {
+        text-align: center;
     }
 }
 
@@ -3357,5 +3432,190 @@ section h2:after {
     
     .section {
         padding: 50px 0;
+    }
+    
+    /* Additional small screen fixes */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .copyright, .footer-legal, .footer-credit {
+        margin-bottom: 10px;
+    }
+    
+    .download-button-container {
+        padding: 15px;
+    }
+    
+    .download-meta span {
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    
+    .sha1-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    
+    .sha1-box {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Fix for download options on very small screens */
+    .download-options {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    /* Fix for SHA1 checksum container */
+    #sha1-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    
+    /* Fix for help links */
+    .help-link {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+/* Mobile-specific styles for Securonis Website
+ * This file contains targeted fixes for mobile displays
+ * Focusing on the download section and footer
+ */
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+    /* DOWNLOAD SECTION FIXES */
+    .download-content {
+        display: block !important;
+    }
+    
+    .download-info {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    
+    .download-button-container {
+        width: 100% !important;
+        padding: 15px !important;
+    }
+    
+    .download-meta {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+    
+    .download-meta span {
+        margin: 5px auto !important;
+    }
+    
+    .download-options {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .download-option {
+        width: 80% !important;
+        margin: 5px auto !important;
+        text-align: center !important;
+    }
+    
+    .installation-help {
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    
+    .help-link {
+        width: 80% !important;
+        margin: 5px auto !important;
+        text-align: center !important;
+    }
+    
+    /* FOOTER FIXES */
+    .footer {
+        padding: 40px 0 20px !important;
+    }
+    
+    .footer-top {
+        display: block !important;
+    }
+    
+    .footer-brand {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .footer-tagline {
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+    
+    .footer-links-container {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    .footer-links-column {
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        text-align: center !important;
+    }
+    
+    .footer-links-column h4 {
+        text-align: center !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .footer-links {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .footer-links li {
+        margin-bottom: 10px !important;
+    }
+    
+    .footer-middle {
+        padding: 30px 0 !important;
+        text-align: center !important;
+    }
+    
+    .footer-social {
+        text-align: center !important;
+    }
+    
+    .social-icons {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .footer-bottom {
+        display: block !important;
+        text-align: center !important;
+    }
+    
+    .copyright, .footer-legal, .footer-credit {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
     }
 }
